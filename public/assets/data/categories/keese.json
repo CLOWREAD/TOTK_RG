@@ -1,0 +1,23 @@
+{
+    "category_name":"蝙蝠",
+    "img":"/assets/images/keese.png",
+    "species":
+    [
+        {
+            "name":"（普通攻击）",
+            "video_pre":"keese_common_pre.webm",
+            "video_res":"keese_common_res.webm",
+            "t_s":2.650,
+            "t_e":2.90,
+            "desc":""
+
+        }
+
+
+
+    ]
+
+
+
+
+}

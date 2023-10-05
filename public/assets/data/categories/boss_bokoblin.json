@@ -1,0 +1,27 @@
+{
+    "category_name":"Boss波克布林",
+    "img":"/assets/images/boss_bokoblin.png",
+    "species":
+    [
+
+        {
+            "name":"（双手武器）",
+            "video_pre":"boss_bokoblin_two_hands_00_pre.webm",
+            "video_res":"boss_bokoblin_two_hands_00_res.webm",
+            "t_s":1.050,
+            "t_e":1.20,
+            "desc":""
+
+        }
+    
+
+
+
+
+
+    ]
+
+
+
+
+}

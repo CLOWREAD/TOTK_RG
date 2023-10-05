@@ -1,0 +1,89 @@
+{
+    "category_name":"人马",
+    "img":"/assets/images/lynel.png",
+    "species":
+    [
+
+        {
+            "name":"（Cause I got a crush on you）",
+            "video_pre":"lynel_crush_pre.webm",
+            "video_res":"lynel_crush_res.webm",
+            "t_s":3.050,
+            "t_e":4.60,
+            "desc":""
+
+        },
+        {
+            "name":"（喷火）",
+            "video_pre":"lynel_fire_pre.webm",
+            "video_res":"lynel_fire_res.webm",
+            "t_s":4.200,
+            "t_e":4.60,
+            "desc":""
+
+        },
+        {
+            "name":"（头角）",
+            "video_pre":"lynel_head_pre.webm",
+            "video_res":"lynel_head_res.webm",
+            "t_s":1.700,
+            "t_e":4.60,
+            "desc":""
+
+        },
+        {
+            "name":"（砸地板）",
+            "video_pre":"lynel_jump_poke_00_pre.webm",
+            "video_res":"lynel_jump_poke_00_res.webm",
+            "t_s":3.150,
+            "t_e":4.60,
+            "desc":""
+
+        },
+        {
+            "name":"（冲刺前撩）",
+            "video_pre":"lynel_rush_slash_00_pre.webm",
+            "video_res":"lynel_rush_slash_00_res.webm",
+            "t_s":3.850,
+            "t_e":4.60,
+            "desc":""
+
+        },
+        {
+            "name":"（大剑拜年）",
+            "video_pre":"lynel_rush_greeting_pre.webm",
+            "video_res":"lynel_rush_greeting_res.webm",
+            "t_s":4.150,
+            "t_e":4.60,
+            "desc":""
+
+        },
+        {
+            "name":"（大风车1）",
+            "video_pre":"lynel_wheel_00_pre.webm",
+            "video_res":"lynel_wheel_00_res.webm",
+            "t_s":2.950,
+            "t_e":4.60,
+            "desc":""
+
+        },
+        {
+            "name":"（大风车2）",
+            "video_pre":"lynel_wheel_01_pre.webm",
+            "video_res":"lynel_wheel_01_res.webm",
+            "t_s":3.150,
+            "t_e":4.60,
+            "desc":""
+
+        }
+        
+        
+
+
+        
+    ]
+
+
+
+
+}

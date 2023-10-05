@@ -1,0 +1,31 @@
+{
+    "category_name":"霍拉布林",
+    "img":"/assets/images/horriblin.png",
+    "species":
+    [
+
+        {
+            "name":"（长枪武器 刺）",
+            "video_pre":"horriblin_spear_01_pre.webm",
+            "video_res":"horriblin_spear_01_res.webm",
+            "t_s":1.350,
+            "t_e":1.90,
+            "desc":""
+
+        }
+        ,
+        {
+            "name":"（长枪武器 撩）",
+            "video_pre":"horriblin_spear_pre.webm",
+            "video_res":"horriblin_spear_res.webm",
+            "t_s":2.150,
+            "t_e":3.20,
+            "desc":""
+
+        }
+    ]
+
+
+
+
+}

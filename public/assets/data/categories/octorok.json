@@ -1,0 +1,24 @@
+{
+    "category_name":"八爪怪",
+    "img":"/assets/images/octorok.png",
+    "species":
+    [
+
+        {
+            "name":"（吐石头）",
+            "video_pre":"octorok_common_pre.webm",
+            "video_res":"octorok_common_res.webm",
+            "t_s":1.70,
+            "t_e":1.90,
+            "desc":""
+
+        }
+
+
+
+    ]
+
+
+
+
+}

@@ -1,0 +1,53 @@
+{
+    "category_name":"古卫兵",
+    "img":"/assets/images/soldier_construct.png",
+    "species":
+    [
+
+
+        {
+            "name":"（单手普通攻击）",
+            "video_pre":"soldier_construct_common_pre.webm",
+            "video_res":"soldier_construct_common_res.webm",
+            "t_s":1.250,
+            "t_e":2.30,
+            "desc":""
+
+        },
+
+        {
+            "name":"（双手横斩）",
+            "video_pre":"soldier_construct_v4_common_pre.webm",
+            "video_res":"soldier_construct_v4_common_res.webm",
+            "t_s":1.80,
+            "t_e":2.30,
+            "desc":""
+
+        },
+
+        {
+            "name":"（双手竖斩）",
+            "video_pre":"soldier_construct_v4_common_01_pre.webm",
+            "video_res":"soldier_construct_v4_common_01_res.webm",
+            "t_s":2.400,
+            "t_e":2.90,
+            "desc":""
+
+        },
+        {
+            "name":"（头部攻击）",
+            "video_pre":"soldier_construct_v4_head_pre.webm",
+            "video_res":"soldier_construct_v4_head_res.webm",
+            "t_s":1.450,
+            "t_e":2.30,
+            "desc":""
+
+        }
+
+
+    ]
+
+
+    
+
+}

@@ -1,0 +1,43 @@
+{
+    "category_name":"波克布林",
+    "img":"/assets/images/bokoblin.png",
+    "species":
+    [
+        
+        {
+            "name":"（单手武器）",
+            "video_pre":"bokoblin_one_hand_pre.webm",
+            "video_res":"bokoblin_one_hand_res.webm",
+            "t_s":1.350,
+            "t_e":1.70,
+            "desc":""
+
+        },
+        {
+            "name":"（单手武器大风车）",
+            "video_pre":"bokoblin_one_hand_01_pre.webm",
+            "video_res":"bokoblin_one_hand_01_res.webm",
+            "t_s":2.650,
+            "t_e":3.90,
+            "desc":""
+
+        },
+        {
+            "name":"（长枪武器）",
+            "video_pre":"bokoblin_spear_pre.webm",
+            "video_res":"bokoblin_spear_res.webm",
+            "t_s":0.950,
+            "t_e":1.20,
+            "desc":""
+
+        }
+
+
+        
+
+    ]
+
+
+
+
+}

@@ -1,0 +1,22 @@
+{
+    "category_name":"库达",
+    "img":"/assets/images/aerocuda.png",
+    "species":
+    [
+        
+
+        {
+            "name":"（撞击）",
+            "video_pre":"aerocuda_pre.webm",
+            "video_res":"aerocuda_res.webm",
+            "t_s":2.950,
+            "t_e":3.70,
+            "desc":""
+
+        }
+    ]
+
+
+
+
+}

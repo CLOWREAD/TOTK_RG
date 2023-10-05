@@ -1,0 +1,33 @@
+
+{
+
+    
+    "video_base_url":"./assets/videos/",
+    "category_base_url":"./assets/data/categories/",
+    "category_json_urls":[
+        {"name":"丘丘","list_url":"chuchu.json"},
+        {"name":"波克布林","list_url":"bokoblin.json"},
+        {"name":"Boss波克布林","list_url":"boss_bokoblin.json"},
+        {"name":"莫利布林","list_url":"moblin.json"},
+        {"name":"蜥蜴战士","list_url":"lizalfos.json"},
+        {"name":"霍拉布林","list_url":"horriblin.json"},
+        {"name":"人马","list_url":"lynel.json"},
+        {"name":"魔像","list_url":"soldier_construct.json"},
+        
+        {"name":"依盖队员","list_url":"yiga_soldier.json"},
+        
+        {"name":"岩石人","list_url":"pebblit.json"},
+        {"name":"八爪怪","list_url":"octorok.json"},
+
+        {"name":"吉波得","list_url":"gibdo.json"},
+        {"name":"库达","list_url":"aerocuda.json"},
+        {"name":"蝙蝠","list_url":"keese.json"},
+        {"name":"幻影盖侬","list_url":"phantom_ganon.json"}
+
+
+
+
+    ]
+
+
+}

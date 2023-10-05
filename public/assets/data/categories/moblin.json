@@ -1,0 +1,55 @@
+{
+    "category_name":"莫利布林",
+    "img":"/assets/images/moblin.png",
+    "species":
+    [
+        {
+            "name":"（单手武器）",
+            "video_pre":"moblin_one_hand_pre.webm",
+            "video_res":"moblin_one_hand_res.webm",
+            "t_s":1.25,
+            "t_e":1.60,
+            "desc":""
+
+        },
+        {
+            "name":"（单手武器蓄力）",
+            "video_pre":"moblin_one_hand_01_pre.webm",
+            "video_res":"moblin_one_hand_01_res.webm",
+            "t_s":3.25,
+            "t_e":4.60,
+            "desc":""
+
+        },
+        
+        {
+            "name":"（头部攻击）",
+            "video_pre":"moblin_head_pre.webm",
+            "video_res":"moblin_head_res.webm",
+            "t_s":1.450,
+            "t_e":1.60,
+            "desc":""
+
+        },
+        {
+            "name":"（脚攻击）",
+            "video_pre":"moblin_foot_pre.webm",
+            "video_res":"moblin_foot_res.webm",
+            "t_s":1.60,
+            "t_e":1.90,
+            "desc":""
+
+        }
+
+
+
+
+
+
+
+    ]
+
+
+
+
+}

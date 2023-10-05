@@ -1,0 +1,23 @@
+{
+    "category_name":"丘丘",
+    "img":"/assets/images/chuchu.png",
+    "species":
+    [
+
+
+        {
+            "name":"（撞击）",
+            "video_pre":"chuchu_pre.webm",
+            "video_res":"chuchu_res.webm",
+            "t_s":2.050,
+            "t_e":3.70,
+            "desc":""
+
+        }
+
+    ]
+
+
+
+
+}

@@ -1,0 +1,26 @@
+{
+    "category_name":"依盖队",
+    "img":"/assets/images/yiga_soldier.png",
+    "species":
+    [
+
+        {
+            "name":"（疾走居合）",
+            "video_pre":"yiga_soldier_pre.webm",
+            "video_res":"yiga_soldier_res.webm",
+            "t_s":2.750,
+            "t_e":3.90,
+            "desc":""
+
+        }
+
+
+
+
+
+    ]
+
+
+
+
+}

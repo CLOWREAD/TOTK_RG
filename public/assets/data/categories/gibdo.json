@@ -1,0 +1,22 @@
+{
+    "category_name":"吉波得",
+    "img":"/assets/images/gibdo.png",
+    "species":
+    [
+
+        {
+            "name":"（普通攻击）",
+            "video_pre":"gibdo_common_pre.webm",
+            "video_res":"gibdo_common_res.webm",
+            "t_s":3.250,
+            "t_e":4.30,
+            "desc":""
+
+        }
+
+    ]
+
+
+
+
+}

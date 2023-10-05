@@ -1,0 +1,64 @@
+{
+    "category_name":"蜥蜴战士",
+    "img":"/assets/images/lizalfos.png",
+    "species":
+    [
+
+        {
+            "name":"（双手武器）",
+            "video_pre":"lizafo_two_hands_pre.webm",
+            "video_res":"lizafo_two_hands_res.webm",
+            "t_s":2.250,
+            "t_e":2.60,
+            "desc":""
+
+        },
+        {
+            "name":"（长枪武器）",
+            "video_pre":"lizafo_spear_01_pre.webm",
+            "video_res":"lizafo_spear_01_res.webm",
+            "t_s":1.650,
+            "t_e":1.90,
+            "desc":""
+
+        },
+        {
+            "name":"（长枪武器跳刺）",
+            "video_pre":"lizafo_spear_pre.webm",
+            "video_res":"lizafo_spear_res.webm",
+            "t_s":3.750,
+            "t_e":4.10,
+            "desc":""
+
+        },
+        {
+            "name":"（喷水攻击）",
+            "video_pre":"phantom_ganon_spear_00_pre.webm",
+            "video_res":"phantom_ganon_spear_00_res.webm",
+            "t_s":2.650,
+            "t_e":2.90,
+            "desc":""
+
+        },
+        {
+            "name":"（头部攻击）",
+            "video_pre":"lizafo_head_pre.webm",
+            "video_res":"lizafo_head_res.webm",
+            "t_s":2.250,
+            "t_e":2.90,
+            "desc":""
+
+        }
+
+
+
+
+
+
+
+    ]
+
+
+
+
+}

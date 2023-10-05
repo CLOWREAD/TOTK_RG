@@ -1,0 +1,45 @@
+{
+    "category_name":"幻影盖侬",
+    "img":"/assets/images/phantom_ganon.png",
+    "species":
+    [
+       
+        {
+            "name":"（双手武器跳劈）",
+            "video_pre":"phantom_ganon_two_hands_00_pre.webm",
+            "video_res":"phantom_ganon_two_hands_00_res.webm",
+            "t_s":1.750,
+            "t_e":2.20,
+            "desc":""
+
+        },
+        {
+            "name":"（双手武器横斩）",
+            "video_pre":"phantom_ganon_two_hands_01_pre.webm",
+            "video_res":"phantom_ganon_two_hands_01_res.webm",
+            "t_s":1.950,
+            "t_e":2.30,
+            "desc":""
+
+        },
+        {
+            "name":"（长枪武器）",
+            "video_pre":"phantom_ganon_spear_00_pre.webm",
+            "video_res":"phantom_ganon_spear_00_res.webm",
+            "t_s":2.650,
+            "t_e":2.90,
+            "desc":""
+
+        }
+
+
+
+
+
+
+    ]
+
+
+
+
+}

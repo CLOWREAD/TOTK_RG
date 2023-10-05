@@ -1,0 +1,31 @@
+{
+    "category_name":"岩石人",
+    "img":"/assets/images/pebblit.png",
+    "species":
+    [
+        {
+            "name":"（大锤80）",
+            "video_pre":"pebblit_00_pre.webm",
+            "video_res":"pebblit_00_res.webm",
+            "t_s":1.70,
+            "t_e":2.00,
+            "desc":""
+
+        },
+        {
+            "name":"（小锤40）",
+            "video_pre":"pebblit_01_pre.webm",
+            "video_res":"pebblit_01_res.webm",
+            "t_s":2.250,
+            "t_e":2.90,
+            "desc":""
+
+        }
+
+
+    ]
+
+
+
+
+}
