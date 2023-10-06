@@ -33,9 +33,9 @@
         },
         {
             "name":"（喷水攻击）",
-            "video_pre":"phantom_ganon_spear_00_pre.webm",
-            "video_res":"phantom_ganon_spear_00_res.webm",
-            "t_s":2.650,
+            "video_pre":"lizafo_water_pre.webm",
+            "video_res":"lizafo_water_res.webm",
+            "t_s":1.850,
             "t_e":2.90,
             "desc":""
 

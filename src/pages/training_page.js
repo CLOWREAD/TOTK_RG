@@ -1,6 +1,6 @@
 import React, { Component, createRef } from "react";
 import Button from '@mui/material/Button';
-import { Box, Chip, Container, InputLabel, Stack, Switch } from "@mui/material";
+import { Box, Chip, Container, InputLabel, Slider, Stack, Switch } from "@mui/material";
 
 
 export class Training_Page extends Component {
@@ -36,9 +36,11 @@ export class Training_Page extends Component {
         this.m_RG_Success_Flag = false;
 
         this.m_Show_Indicator_Flag = true;
-
+        this.m_Indicator_Speed = 1;
+        this.m_Old_Game_Pad = null;
     }
     async componentDidMount() {
+        document.addEventListener("keydown",(e)=>{this.On_Key_Down(e)})
         if (this.m_Pre_Video_Blob_URL == null || this.m_Res_Video_Blob_URL == null) {
 
             this.m_Pre_Video_Blob = await ((await fetch(this.m_Pre_URL)).blob());
@@ -50,11 +52,12 @@ export class Training_Page extends Component {
             this.forceUpdate();
             window.addEventListener("resize", () => { this.forceUpdate() })
             this.Get_Show_Indicator();
+
         }
         try {
             window.setTimeout(
                 async () => {
-                    
+
                     this.On_Timer();
                     this.Init_Once();
                     await this.m_Video_Pre.current.play();
@@ -64,6 +67,29 @@ export class Training_Page extends Component {
             console.error(e)
         }
     }
+      /**
+   * 
+   * @param {KeyboardEvent} e 
+   */
+  On_Key_Down(e)
+  {
+    if(e.key=="Enter")
+    {
+        this.On_Pointer_Down();
+    }
+    if(e.key=="Escape")
+    {
+        window.history.pushState(
+            {
+
+            },
+            "",
+            "./#/"
+        );
+        window.history.go(0);
+    }
+
+  }
     Set_Show_Indicator(value) {
         console.log(value);
         this.m_Show_Indicator_Flag = value;
@@ -77,12 +103,31 @@ export class Training_Page extends Component {
     }
     Get_Show_Indicator() {
         var t_value = window.localStorage.getItem("SHOW_INDICATOR");
-        t_value=t_value=="false"?false:true;
+        t_value = t_value == "false" ? false : true;
         console.log(t_value)
         this.Set_Show_Indicator(t_value);
     }
-    Init_Once() {
 
+    Set_Indicator_Speed(value) {
+        console.log(value);
+        this.m_Indicator_Speed = value;
+        window.localStorage.setItem("INDICATOR_SPEED", this.m_Indicator_Speed);
+
+        this.m_Video_Pre.current.playbackRate = 1 / value;
+        this.forceUpdate();
+    }
+    Get_Indicator_Speed() {
+        var t_value = window.localStorage.getItem("INDICATOR_SPEED");
+        t_value = t_value == null ? 1 : parseFloat(t_value);
+
+        console.log(t_value)
+        this.Set_Indicator_Speed(t_value);
+    }
+
+    Init_Once() {
+        this.On_Game_Pad_Loop();
+        
+        this.Get_Indicator_Speed();
         let t_pre_video_dur = 10;
         if (this.m_Video_Pre.current != null) {
             t_pre_video_dur = this.m_Video_Pre.current.duration;
@@ -186,6 +231,49 @@ export class Training_Page extends Component {
 
     }
 
+    On_Game_Pad_Loop() {
+
+        window.setTimeout(() => { this.On_Game_Pad_Loop() }, 50);
+        let t_gplist = navigator.getGamepads();
+        let t_gp = null;
+        for (let i = 0; i < t_gplist.length; i++) {
+            if (t_gplist[i] != null) {
+                t_gp = t_gplist[i];
+                break;
+            }
+        }
+        if (t_gp == null) {
+            return;
+        }
+        if (this.m_Old_Game_Pad == null) {
+            this.m_Old_Game_Pad = t_gp;
+            return;
+        }
+
+        if (this.m_Old_Game_Pad.buttons[0].pressed == false && t_gp.buttons[0].pressed == true) {
+
+            this.On_Pointer_Down();
+
+        }
+
+        if (this.m_Old_Game_Pad.buttons[1].pressed == false && t_gp.buttons[1].pressed == true) {
+
+
+            window.history.pushState(
+                {
+
+                },
+                "",
+                "./#/"
+            );
+            window.history.go(0);
+
+        }
+        //console.log(t_gp.buttons);
+        this.m_Old_Game_Pad = t_gp;
+
+    }
+
     render() {
 
 
@@ -211,23 +299,26 @@ export class Training_Page extends Component {
 
                 <div style={{ zIndex: 9, height: "36px", position: "absolute", left: "20px", top: "0px" }}>
                     <Stack direction={"row"} spacing={2}>
-                    <Button variant="contained" onClick={() => {
-                        
-                        window.history.pushState(
-                            {
-                                
-                            },
-                            "",
-                            "./#/"
-                        );
-                        window.history.go(0);
-                    }}> 返回</Button>
-                    <Button variant="contained" onClick={() => { if (this.Full_Screen_Enabled()) { this.Full_Screen_Cancel() } else { this.Full_Screen() } }}> 全屏切换</Button>
-                    <Box color="primary" sx={{padding:"12px 12px",width:"90px",height:"48px", backgroundColor:"primary.main",borderRadius:"4px" ,color:"#FFFFFF" }}  >
-                    显示指示器:
-                    <Switch color="warning"  checked={this.m_Show_Indicator_Flag} onChange={(e) => { this.Set_Show_Indicator(e.target.checked); }} ></Switch>
-                    </Box>
+                        <Button variant="contained" onClick={() => {
 
+                            window.history.pushState(
+                                {
+
+                                },
+                                "",
+                                "./#/"
+                            );
+                            window.history.go(0);
+                        }}> 返回</Button>
+                        <Button variant="contained" onClick={() => { if (this.Full_Screen_Enabled()) { this.Full_Screen_Cancel() } else { this.Full_Screen() } }}> 全屏切换</Button>
+                        <Box color="primary" sx={{ padding: "12px 12px", width: "90px", height: "48px", backgroundColor: "primary.main", borderRadius: "4px", color: "#FFFFFF" }}  >
+                            显示指示器:
+                            <Switch color="warning" checked={this.m_Show_Indicator_Flag} onChange={(e) => { this.Set_Show_Indicator(e.target.checked); }} ></Switch>
+                        </Box>
+                        <Box color="primary" sx={{ padding: "12px 12px", width: "120px", height: "48px", backgroundColor: "primary.main", borderRadius: "4px", color: "#FFFFFF" }}  >
+                            慢速:
+                            <Slider value={this.m_Indicator_Speed} min={1} step={0.01} max={2.5} color="warning" onChange={(e) => { this.Set_Indicator_Speed(e.target.value) }} ></Slider>
+                        </Box>
                     </Stack>
                 </div>
 
@@ -245,7 +336,7 @@ export class Training_Page extends Component {
 
                         </div>
                     </div>
-                    <svg  style={{ pointerEvents: "none", zIndex: 10, position: "absolute", left: "0px", top: "0px", width: "1280px", height: "720px" }} >
+                    <svg style={{ pointerEvents: "none", zIndex: 10, position: "absolute", left: "0px", top: "0px", width: "1280px", height: "720px" }} >
                         <circle cx="640" cy="360" r="150" fill="none" strokeWidth="16" stroke="#7C83FD70"></circle>
                         <circle ref={this.m_Circle_Progress} transform="translate(640 360) scale(-1 1) rotate(-90)" cx="0" cy="0" r="150" fill="none" strokeWidth="24" stroke="#FF8000A0"
                         ></circle>
